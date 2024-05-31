@@ -6,12 +6,12 @@
 
 ### Vanilla JavaScript 프로젝트
 
-1. **project1**: [프로젝트 설명](https://themes.getbootstrap.com/preview/?theme_id=5824) 사이트 클론코딩
+1. **project1**: [사이트 링크](https://themes.getbootstrap.com/preview/?theme_id=5824) 사이트 클론코딩
 2. **project2**: 미정
 
 ### React 프로젝트
 
-1. **project1**: [프로젝트 설명](https://themes.getbootstrap.com/preview/?theme_id=5824)사이트 클론코딩 - 리액트
+1. **project1**: [사이트 링크](https://themes.getbootstrap.com/preview/?theme_id=5824)사이트 클론코딩 - 리액트
 2. **project2**: 미정
 
 ## 기여
