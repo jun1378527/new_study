@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Navbar and Carousel</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-container">
+        <a href="#" class="logo">SELL.</a>
+        <div class="navbar-links">
+          <div class="dropdown">
+            <a href="#" class="nav-link" data-toggle="dropdown">Home</a>
+            <div class="dropdown-content">
+              <a href="#"
+                >Slider + broken grid <span class="new-label">New</span></a
+              >
+              <a href="#">Fullscreen home + Lookbook</a>
+              <a href="#">Split-screen home</a>
+              <a href="#">Classic home</a>
+              <a href="#"
+                >Parallax sections<span class="new-label">New</span></a
+              >
+            </div>
+          </div>
+          <div class="dropdown">
+            <a href="#" class="nav-link" data-toggle="dropdown">Shop</a>
+            <div class="dropdown-content">
+              <a href="#">Category - left sidebar</a>
+              <a href="#">Category - right sidebar</a>
+              <a href="#">Category - no sidebar</a>
+              <a href="#">Category - full width</a>
+              <a href="#">Category - masonry items</a>
+              <a href="#">Category - w/banner</a>
+              <a href="#">Product detail</a>
+              <a href="#">Product detail - v.2</a>
+              <a href="#">Product detail - v.3</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <a href="#" class="nav-link" data-toggle="dropdown">Template</a>
+            <div class="dropdown-content">
+              <a href="#">Example</a>
+              <a href="#">Example</a>
+              <a href="#">Example</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <a href="#" class="nav-link" data-toggle="dropdown">Dropdown</a>
+            <div class="dropdown-content">
+              <a href="#">Example</a>
+              <a href="#">Example Example</a>
+              <a href="#">Example Example Example</a>
+            </div>
+          </div>
+          <a href="#" class="nav-link">Contact</a>
+          <div class="dropdown">
+            <a href="#" class="nav-link" data-toggle="dropdown">Docs</a>
+            <div class="dropdown-content">
+              <a href="#">Example</a>
+              <a href="#">Example Example</a>
+              <a href="#">Example Example Example</a>
+            </div>
+          </div>
+        </div>
+        <div class="navbar-icons">
+          <a href="#"
+            ><img src="img/search.png" alt="Search Icon" class="icon"
+          /></a>
+          <a href="#"
+            ><img src="img/user.png" alt="User Icon" class="icon"
+          /></a>
+          <a href="#"
+            ><img src="img/cart.png" alt="Cart Icon" class="icon"
+          /></a>
+        </div>
+      </div>
+    </nav>
+
+    <header class="header">
+      <div class="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/carousel_img1.jpg" alt="Slide 1" />
+            <div class="carousel-caption">
+              <p>J U S T &emsp; A R R I V E D</p>
+              <h1>Denim Jackets</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+                illo sint porro assumenda unde deserunt quis labore non
+              </p>
+              <a href="#" class="carousel-btn">View Collection</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/carousel_img2.jpg" alt="Slide 2" />
+            <div class="carousel-caption">
+              <h1>SKELETON<br />TEES</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+                illo sint porro assumenda unde deserunt quis labore non
+              </p>
+              <a href="#" class="carousel-btn">START SHOPPING</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/carousel_img3.jpg" alt="Slide 3" />
+            <div class="carousel-caption">
+              <p>O U R &emsp;B E S T S E L L E R</p>
+              <h1>Skinny Jeans</h1>
+              <a href="#" class="carousel-btn">View Collection</a>
+            </div>
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#"
+          role="button"
+          data-slide="prev"
+        >
+          <img
+            src="img/left.png"
+            alt="Previous"
+            class="carousel-control-prev-icon"
+          />
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#"
+          role="button"
+          data-slide="next"
+        >
+          <img
+            src="img/right.png"
+            alt="Next"
+            class="carousel-control-next-icon"
+          />
+        </a>
+        <div class="carousel-indicators">
+          <span class="indicator active"></span>
+          <span class="indicator"></span>
+          <span class="indicator"></span>
+        </div>
+      </div>
+    </header>
+    <main class="main-content">
+      <div class="grid-container">
+        <div class="grid-item img1">
+          <img src="img/img1.jpg" alt="Image 1" />
+          <div class="overlay">
+            <p class="img_caption1">Top picks</p>
+            <a href="#" class="grid-btn">View More</a>
+          </div>
+        </div>
+        <div class="grid-item img2">
+          <img src="img/img2.jpg" alt="Image 2" />
+          <div class="overlay">
+            <p class="img_caption1">New arrivals</p>
+            <a href="#" class="grid-btn">View More</a>
+          </div>
+        </div>
+        <div class="grid-item img3">
+          <img src="img/img3.jpg" alt="Image 3" />
+          <div class="overlay">
+            <p class="img_caption2">Jackets</p>
+            <a href="#" class="grid-btn2">SHOP NOW <span>-></span></a>
+          </div>
+        </div>
+        <div class="grid-item img4">
+          <img src="img/img4.jpg" alt="Image 4" />
+          <div class="overlay">
+            <p class="img_caption2">Lookbook</p>
+            <a href="#" class="grid-btn2">SHOP NOW<span>-></span></a>
+          </div>
+        </div>
+        <div class="grid-item img5">
+          <img src="img/img5.jpg" alt="Image 5" />
+          <div class="overlay">
+            <p class="img_caption2 black_caption">Try this</p>
+            <a href="#" class="grid-btn2 black_caption"
+              >SHOP NOW<span>-></span></a
+            >
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
