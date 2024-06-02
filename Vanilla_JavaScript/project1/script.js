@@ -5,6 +5,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const logo = document.querySelector(".logo");
   const icons = document.querySelectorAll(".icon");
   const indicators = document.querySelectorAll(".indicator");
+  const hamburger = document.querySelector(".hamburger");
+  const navbarLinks = document.querySelector(".navbar-links");
 
   dropdowns.forEach(dropdown => {
     const link = dropdown.querySelector(".nav-link");
@@ -35,6 +37,12 @@ document.addEventListener("DOMContentLoaded", function () {
         navbar.classList.remove("scrolled");
       }
     }
+  });
+
+  // 햄버거 메뉴 클릭 이벤트
+  hamburger.addEventListener("click", function () {
+    navbarLinks.classList.toggle("open");
+    hamburger.classList.toggle("open");
   });
 
   // 캐러셀 기능
@@ -165,6 +173,6 @@ document.addEventListener("DOMContentLoaded", function () {
     updateNavbarAppearance();
   });
 
-  // 초기 업데이트
+  // 초기 업데이트를 통해 올바른 외형 설정
   updateNavbarAppearance();
 });
