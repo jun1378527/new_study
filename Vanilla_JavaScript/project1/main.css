@@ -1,19 +1,19 @@
-/* Global Styles */
 body {
   font-family: "Playfair Display", serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  height: 2000px; /* 바디 길이를 일부러 늘림 */
+  height: 100vh;
 }
 
+/* 네비게이션 바 스타일 */
 .navbar {
   background-color: transparent; /* 네비게이션 바를 완전히 투명하게 */
   padding: 1rem;
-  position: fixed; /* 스크롤에 따라 고정 */
+  position: fixed; /* 스크롤에 따라 고정 스티키로 하면 귀찮아짐*/
   top: 0;
   width: 100%;
-  z-index: 1000;
+  z-index: 1001;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -21,7 +21,7 @@ body {
 .navbar.scrolled,
 .navbar.open {
   background-color: rgba(255, 255, 255, 1);
-  color: black; /* 네비게이션 바 호버 및 드롭다운 열릴 시 배경색 흰색 */
+  color: black;
 }
 
 .navbar-container {
@@ -34,8 +34,8 @@ body {
   font-size: 1.5rem;
   font-weight: bold;
   text-decoration: none;
-  color: white; /* 기본 상태에서 흰색 */
-  transition: color 0.3s ease;
+  color: white;
+  transition: color 0.3s ease; /* 텍스트 색상 전환 효과 */
 }
 
 .navbar:hover .logo {
@@ -74,7 +74,7 @@ body {
 .icon {
   width: 24px;
   height: 24px;
-  filter: invert(1); /* 흰색 아이콘 */
+  filter: invert(1);
   transition: filter 0.3s ease;
 }
 
@@ -92,7 +92,7 @@ body {
 }
 
 .dropdown-content {
-  visibility: hidden; /* 보이지 않도록 설정 */
+  visibility: hidden;
   position: absolute;
   background-color: #f9f9f9;
   width: auto;
@@ -100,12 +100,13 @@ body {
   font-size: 14.4px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
-  top: 100%; /* 부모 요소 바로 아래에 위치 */
-  margin-top: 15px; /* 원하는 만큼의 간격을 추가 */
+  top: 100%;
+  margin-top: 15px;
   opacity: 0;
   transform: translateY(30px);
   transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s linear 0.3s; /* visibility 속성의 전환 추가 */
 }
+
 .dropdown-content a {
   color: black;
   padding: 12px 16px;
@@ -124,12 +125,12 @@ body {
   transition: opacity 0.3s ease, transform 0.3s ease; /* visibility 전환 제거 */
 }
 
-/* Header Styles */
+/* 헤더 섹션 스타일 */
 .header {
   width: 100%;
   overflow: hidden;
   position: relative;
-  max-height: 842px; /* 캐러셀 높이 제한 */
+  max-height: 842px;
 }
 
 .carousel {
@@ -147,14 +148,14 @@ body {
 .carousel-item {
   min-width: 100%;
   box-sizing: border-box;
-  position: relative; /* 추가 */
+  position: relative;
 }
 
 .carousel-item img {
   width: 100%;
   display: block;
-  max-height: 842px; /* 이미지 높이 제한 */
-  object-fit: cover; /* 이미지 비율 유지 */
+  max-height: 842px;
+  object-fit: cover;
 }
 
 .carousel-control-prev,
@@ -162,8 +163,8 @@ body {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: none; /* 배경 제거 */
-  border: none; /* 테두리 제거 */
+  background: none;
+  border: none;
   padding: 0;
   cursor: pointer;
   z-index: 1000;
@@ -171,7 +172,7 @@ body {
 
 .carousel-control-prev img,
 .carousel-control-next img {
-  width: 50px; /* 원하는 아이콘 크기로 조정 */
+  width: 50px;
   height: auto;
   filter: invert(1); /* 아이콘을 흰색으로 변경 */
 }
@@ -206,12 +207,14 @@ body {
   margin-bottom: 0;
   font-weight: 300;
 }
+
 .navbar.hover .nav-link,
 .navbar.hover .logo,
 .navbar.hover .icon {
   color: black !important;
   filter: invert(0) !important;
 }
+
 .new-label {
   background-color: #d1ecf1;
   color: #17a2b8;
@@ -222,6 +225,7 @@ body {
   display: inline-block;
   box-sizing: border-box;
 }
+
 /* 캐러셀 인디케이터 스타일 */
 .carousel-indicators {
   display: flex;
@@ -246,15 +250,16 @@ body {
   height: 16px;
   background-color: white;
 }
+
 /* 캐러셀 버튼 스타일 */
 .carousel-btn {
   display: inline-block;
   padding: 10px 20px;
-  color: black; /* 버튼 글씨 색상 */
-  background-color: white; /* 버튼 배경 색상 */
-  text-decoration: none; /* 밑줄 제거 */
+  color: black;
+  background-color: white;
+  text-decoration: none;
   font-size: 1rem;
-  margin-top: 40px; /* 상단 여백 */
+  margin-top: 40px;
   transition: background-color 0.3s ease, color 0.3s ease; /* 전환 효과 */
   border: none;
   text-shadow: none;
@@ -262,9 +267,10 @@ body {
 
 /* 캐러셀 버튼 호버 효과 */
 .carousel-btn:hover {
-  background-color: rgb(218, 218, 218); /* 호버 시 배경 색상 변경 */
+  background-color: rgb(218, 218, 218);
 }
-/* Main content 스타일 */
+
+/* 메인 콘텐츠 스타일 */
 .main-content {
   padding: 20px;
   display: flex;
@@ -279,7 +285,7 @@ body {
   grid-template-areas:
     "img1 img1 img1 img2 img2 img2"
     "img3 img3 img4 img4 img5 img5";
-  gap: 10px; /* 그리드 아이템 사이의 간격 */
+  gap: 10px;
 }
 
 .grid-item {
@@ -298,15 +304,19 @@ body {
 .img1 {
   grid-area: img1;
 }
+
 .img2 {
   grid-area: img2;
 }
+
 .img3 {
   grid-area: img3;
 }
+
 .img4 {
   grid-area: img4;
 }
+
 .img5 {
   grid-area: img5;
 }
@@ -323,12 +333,12 @@ body {
 .grid-btn {
   display: inline-block;
   padding: 10px 20px;
-  color: black; /* 버튼 글씨 색상 */
-  background-color: white; /* 버튼 배경 색상 */
-  text-decoration: none; /* 밑줄 제거 */
+  color: black;
+  background-color: white;
+  text-decoration: none;
   font-size: 1rem;
-  margin-top: 10px; /* 상단 여백 */
-  transition: background-color 0.3s ease, color 0.3s ease; /* 전환 효과 */
+  margin-top: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
   border: none;
   text-shadow: none;
 }
@@ -337,18 +347,21 @@ body {
 .grid-btn:hover {
   background-color: rgb(218, 218, 218); /* 호버 시 배경 색상 변경 */
 }
+
 .img_caption1 {
   font-weight: 700;
   font-size: 3rem;
   margin-bottom: 10px;
   white-space: nowrap;
 }
+
 .img_caption2 {
   font-weight: 400;
   font-size: 2rem;
   margin-bottom: 10px;
   white-space: nowrap;
 }
+
 .grid-btn2 {
   color: white;
   text-decoration: none;
@@ -383,4 +396,142 @@ body {
 
 .black_caption {
   color: black;
+}
+
+/* 푸터 섹션 1 */
+.footer1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  height: 240px;
+}
+
+.footer-item {
+  display: flex;
+  align-items: center;
+  padding-right: 20px; /* 오른쪽 패딩 추가 */
+  border-right: 1px solid #000000; /* 오른쪽 구분선 */
+}
+
+.footer-item:last-child {
+  border-right: none; /* 마지막 항목의 구분선 제거 */
+}
+
+.footer-item img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.footer-item p {
+  margin: 0;
+  color: #333;
+  font-size: 14px;
+}
+
+.border {
+  font-weight: 800;
+}
+
+/* 푸터 섹션 2 */
+.footer2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 350px;
+  background-color: #dee2e6;
+  color: #868e96;
+  padding: 20px;
+}
+
+.footer-column {
+  flex: 1;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; /* 텍스트 가운데 정렬 */
+}
+
+.footer-logo {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: black; /* 로고 색상 검정 */
+}
+
+.footer-icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.footer-icons img {
+  width: 14px;
+  height: 14px;
+  filter: grayscale(100%) brightness(100%); /* 기본 상태에서 배경색과 같게 설정 */
+  transition: filter 0.3s ease; /* 호버 시 부드럽게 전환 */
+}
+
+.footer-icons img:hover {
+  filter: none; /* 호버 시 필터 제거 */
+}
+
+.footer-column h3 {
+  font-size: 14.4px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.footer-column p,
+.footer-column ul li a {
+  font-size: 14.4px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 5px;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+  color: #000;
+}
+
+.footer-column input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: #dee2e6;
+  color: #868e96;
+}
+
+/* 푸터 섹션 3 */
+.footer3 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 80px;
+  background-color: #343a40;
+  padding-left: 40px;
+}
+
+.footer3 p {
+  color: #dee2e6;
+  font-size: 14.4px;
+  margin: 0;
 }

@@ -165,6 +165,6 @@ document.addEventListener("DOMContentLoaded", function () {
     updateNavbarAppearance();
   });
 
-  // 초기 업데이트를 통해 올바른 외형 설정
+  // 초기 업데이트
   updateNavbarAppearance();
 });
