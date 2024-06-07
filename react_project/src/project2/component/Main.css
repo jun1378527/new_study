@@ -1,0 +1,8 @@
+.Main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  background-color: #4d869c;
+  padding: 50px;
+  align-items: center;
+}

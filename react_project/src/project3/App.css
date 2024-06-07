@@ -1,0 +1,60 @@
+.App-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.App-header {
+  margin-top: 150px;
+  text-align: center;
+}
+
+.viewer-section {
+  background-color: #feffd2;
+  padding: 20px;
+  border-radius: 30px;
+  width: 80%;
+  text-align: center;
+}
+
+.controller-section {
+  background-color: #ffeea9;
+  padding: 20px;
+  border-radius: 30px;
+  width: 80%;
+  text-align: center;
+}
+
+button {
+  margin: 5px;
+  padding: 10px 20px;
+  background-color: #ffbf78;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff7d29;
+  transform: scale(1.05);
+}
+
+button:active {
+  background-color: #ff7d29;
+  transform: scale(1.05);
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("./font/PretendardVariable.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Pretendard", sans-serif;
+}

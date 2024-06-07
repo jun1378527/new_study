@@ -1,0 +1,46 @@
+.controller {
+  position: relative;
+}
+
+.fly-number {
+  position: fixed;
+  top: 20px;
+  left: 0;
+  font-size: 24px;
+  color: #ff7d29;
+  animation: fly-horizontal 1s ease-in-out;
+  pointer-events: none;
+}
+
+@keyframes fly-horizontal {
+  0% {
+    left: 0;
+    opacity: 1;
+  }
+  100% {
+    left: 100%;
+    opacity: 0;
+  }
+}
+
+button {
+  margin: 5px;
+  padding: 10px 20px;
+  background-color: #ffbf78;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff7d29;
+  transform: scale(1.05);
+}
+
+button:active {
+  background-color: #ff7d29;
+  transform: scale(1.05);
+}

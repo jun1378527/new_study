@@ -1,0 +1,19 @@
+.TodoEditor {
+  margin: 20px;
+}
+
+.TodoEditor form {
+  display: flex;
+}
+
+.TodoEditor input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.TodoEditor button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-left: 10px;
+}

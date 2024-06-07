@@ -1,0 +1,30 @@
+.TodoItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.TodoItem.completed span {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.TodoItem button {
+  background: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.TodoItem input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.TodoItem input[type="text"] {
+  flex: 1;
+  margin-right: 10px;
+  padding: 5px;
+}

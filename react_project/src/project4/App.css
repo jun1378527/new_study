@@ -1,0 +1,18 @@
+.App {
+  text-align: center;
+}
+
+.search {
+  margin: 20px 0;
+}
+
+.search input {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.search button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-left: 10px;
+}
