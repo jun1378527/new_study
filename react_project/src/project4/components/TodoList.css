@@ -1,18 +1,43 @@
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .TodoList {
-  text-align: center;
+  text-align: left;
+  margin: 20px 0; /* 상하 여백만 추가 */
+  animation: slideIn 0.5s ease-in-out;
 }
 
 .search {
   margin: 20px 0;
+  display: flex;
+  align-items: center;
 }
 
 .search input {
   padding: 10px;
   font-size: 16px;
+  flex: 1;
+  border: 1px solid #af8f6f;
+  color: #74512d; /* 텍스트 색상 */
 }
 
 .search button {
-  padding: 10px 20px;
+  padding: 10px;
   font-size: 16px;
   margin-left: 10px;
+  flex: 0 0 120px; /* 버튼 길이를 고정된 값으로 설정 */
+  background-color: #74512d; /* 버튼 색상 */
+  color: #f8f4e1; /* 버튼 텍스트 색상 */
+  border: none;
+  cursor: pointer;
+}
+.search button:hover {
+  background-color: #543310; /* 호버 시 버튼 색상 변경 */
 }

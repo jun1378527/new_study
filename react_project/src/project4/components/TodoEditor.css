@@ -1,19 +1,45 @@
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .TodoEditor {
-  margin: 20px;
+  margin: 20px 0;
+  text-align: left;
+  animation: slideIn 0.5s ease-in-out;
 }
 
 .TodoEditor form {
   display: flex;
+  align-items: center;
 }
 
 .TodoEditor input {
-  flex: 1;
   padding: 10px;
   font-size: 16px;
+  flex: 1;
+  border: 1px solid #af8f6f;
+  color: #74512d; /* 텍스트 색상 */
 }
 
 .TodoEditor button {
-  padding: 10px 20px;
+  padding: 10px;
   font-size: 16px;
   margin-left: 10px;
+  width: 120px; /* 버튼 길이를 고정된 값으로 설정 */
+  background-color: #74512d; /* 버튼 색상 */
+  color: #f8f4e1; /* 버튼 텍스트 색상 */
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s; /* 호버 효과를 위한 트랜지션 추가 */
+}
+
+.TodoEditor button:hover {
+  background-color: #543310; /* 호버 시 버튼 색상 변경 */
 }

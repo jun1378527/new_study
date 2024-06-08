@@ -16,11 +16,11 @@ const TodoList = ({
       <div className="search">
         <input
           type="text"
-          placeholder="Search..."
+          placeholder="검색..."
           value={searchTerm}
           onChange={e => setSearchTerm(e.target.value)}
         />
-        <button onClick={handleSearch}>Search</button>
+        <button onClick={handleSearch}>검색</button>
       </div>
       {todos.map((todo, index) => (
         <TodoItem

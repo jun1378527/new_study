@@ -1,6 +1,7 @@
 .Header {
-  background-color: #dbdbdb;
+  margin-top: 5%;
+  background-color: #af8f6f; /* 헤더 배경색 */
   padding: 20px;
-  color: rgb(107, 107, 107);
+  color: #f8f4e1; /* 헤더 텍스트 색상 */
   text-align: center;
 }

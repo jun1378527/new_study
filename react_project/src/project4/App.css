@@ -1,18 +1,16 @@
+@font-face {
+  font-family: "CustomFont";
+  src: url("./font/PretendardVariable.woff2") format("truetype");
+}
+
+body {
+  font-family: "CustomFont", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
-}
-
-.search {
-  margin: 20px 0;
-}
-
-.search input {
-  padding: 10px;
-  font-size: 16px;
-}
-
-.search button {
-  padding: 10px 20px;
-  font-size: 16px;
-  margin-left: 10px;
+  margin: 0 10%; /* 왼쪽과 오른쪽 마진 설정 */
 }

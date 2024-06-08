@@ -22,7 +22,7 @@ const TodoEditor = ({ addTodo }) => {
           onChange={e => setText(e.target.value)}
           placeholder="새로운 Todo..."
         />
-        <button type="submit">Add</button>
+        <button type="submit">추가</button>
       </form>
     </div>
   );
