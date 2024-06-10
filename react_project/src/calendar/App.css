@@ -1,0 +1,44 @@
+/* src/calendar/App.css */
+.App {
+  font-family: Arial, sans-serif;
+  background-color: #eef2ff;
+  padding: 20px;
+  position: relative;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #eef2ff;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+  background-color: #eef2ff;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.hamburger-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 10; /* 햄버거 바를 다른 요소들 위에 위치시킴 */
+}
+
+.calendar-wrapper {
+  flex: 1;
+  padding-left: 20px;
+  position: relative;
+}
+ 

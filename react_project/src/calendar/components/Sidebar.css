@@ -1,0 +1,49 @@
+/* src/calendar/components/Sidebar.css */
+.sidebar {
+  width: 0;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  transition: width 0.3s, visibility 0.3s, opacity 0.3s linear;
+  padding: 20px;
+  visibility: hidden;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.sidebar.visible {
+  width: 270px;
+  visibility: visible;
+  opacity: 1;
+}
+
+.search-input {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.month-section {
+  margin-bottom: 20px;
+}
+
+.month {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.events {
+  margin-left: 10px;
+}
+
+.event {
+  background-color: #3498db;
+  color: white;
+  padding: 5px;
+  border-radius: 4px;
+  margin-bottom: 5px;
+  margin-right: 10%;
+}
